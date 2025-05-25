@@ -1,0 +1,26 @@
+export var SocketEvents;
+(function (SocketEvents) {
+    // Connection events
+    SocketEvents["CONNECT"] = "connect";
+    SocketEvents["DISCONNECT"] = "disconnect";
+    SocketEvents["ERROR"] = "error";
+    // Room management
+    SocketEvents["JOIN_ROOM"] = "join_room";
+    SocketEvents["LEAVE_ROOM"] = "leave_room";
+    SocketEvents["USER_JOINED"] = "user_joined";
+    SocketEvents["USER_LEFT"] = "user_left";
+    // Drawing events
+    SocketEvents["DRAW"] = "draw";
+    SocketEvents["ERASE"] = "erase";
+    SocketEvents["CLEAR"] = "clear";
+    SocketEvents["UNDO"] = "undo";
+    SocketEvents["REDO"] = "redo";
+    // Chat events
+    SocketEvents["MESSAGE"] = "message";
+    SocketEvents["TYPING"] = "typing";
+    SocketEvents["STOPPED_TYPING"] = "stopped_typing";
+    SocketEvents["MESSAGE_RECEIVED"] = "message_received";
+    // Connection monitoring
+    SocketEvents["PING"] = "ping";
+    SocketEvents["PONG"] = "pong";
+})(SocketEvents || (SocketEvents = {}));
